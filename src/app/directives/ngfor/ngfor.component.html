@@ -1,0 +1,23 @@
+<h1>ngfor Component</h1>
+<h3>İsimler</h3>
+<div *ngFor="let name of names">{{name}}</div>
+<h3>Kullanicilar</h3>
+<div *ngFor="let user of userList">{{user.id}}-{{user.name}}-{{user.email}}</div>
+<h3>KullanicilarTable</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>        
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userList">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+        </tr>
+    </tbody>
+</table>
