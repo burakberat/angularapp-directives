@@ -17,5 +17,5 @@ import { CustomDirective } from './directives/custom.directive';
 })
 export class AppComponent {
   title = 'angularapp-directives';
-  //publish checkk
+  //publish check-in
 }
